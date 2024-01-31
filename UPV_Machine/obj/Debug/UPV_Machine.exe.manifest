@@ -138,14 +138,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="UPV_Machine.exe" size="1220096">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="UPV_Machine.exe" size="869376">
       <assemblyIdentity name="UPV_Machine" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>EhGV59FRXXPPCcqZmIC/B64b5O3SHl8GOVIcv0Qxbmc=</dsig:DigestValue>
+        <dsig:DigestValue>8RwdspmRgW+qsKNs4wPMDrTxjw20mCxqgD4mcPgc05A=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

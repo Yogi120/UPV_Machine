@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace UPV_Machine
 {
-    public partial class ModeMem : Form
+    public partial class ModeMemory : Form
     {
-        public ModeMem()
+        public ModeMemory()
         {
             InitializeComponent();
         }

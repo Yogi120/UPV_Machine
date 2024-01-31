@@ -1,7 +1,7 @@
 ﻿
 namespace UPV_Machine
 {
-    partial class ModeMem
+    partial class ModeMemory
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace UPV_Machine
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ModeMem));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ModeMemory));
             this.panel1 = new System.Windows.Forms.Panel();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
@@ -41,9 +41,6 @@ namespace UPV_Machine
             this.radioButton6 = new System.Windows.Forms.RadioButton();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.radioButton8 = new System.Windows.Forms.RadioButton();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.radioButton12 = new System.Windows.Forms.RadioButton();
             this.radioButton11 = new System.Windows.Forms.RadioButton();
@@ -51,6 +48,9 @@ namespace UPV_Machine
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnProceed = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -235,60 +235,6 @@ namespace UPV_Machine
             this.radioButton8.UseVisualStyleBackColor = false;
             this.radioButton8.CheckedChanged += new System.EventHandler(this.radioButton8_CheckedChanged);
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Red;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Image = global::UPV_Machine.Properties.Resources.down_arrow;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.Location = new System.Drawing.Point(339, 72);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(226, 42);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "SELECT MODE";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = global::UPV_Machine.Properties.Resources.down_arrow;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(26, 72);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(226, 42);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "SELECT USER";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Red;
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Image = global::UPV_Machine.Properties.Resources.down_arrow;
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.Location = new System.Drawing.Point(667, 72);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(226, 42);
-            this.button3.TabIndex = 8;
-            this.button3.Text = "SELECT SITE";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.ControlDark;
@@ -358,7 +304,7 @@ namespace UPV_Machine
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(913, 48);
+            this.panel4.Size = new System.Drawing.Size(800, 48);
             this.panel4.TabIndex = 11;
             // 
             // label1
@@ -386,12 +332,66 @@ namespace UPV_Machine
             this.btnProceed.Text = "Proceed";
             this.btnProceed.UseVisualStyleBackColor = false;
             // 
-            // ModeMem
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Red;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button3.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Image = global::UPV_Machine.Properties.Resources.down_arrow;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button3.Location = new System.Drawing.Point(667, 72);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(226, 42);
+            this.button3.TabIndex = 8;
+            this.button3.Text = "SELECT SITE";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Red;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Image = global::UPV_Machine.Properties.Resources.down_arrow;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.Location = new System.Drawing.Point(339, 72);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(226, 42);
+            this.button2.TabIndex = 6;
+            this.button2.Text = "SELECT MODE";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Image = global::UPV_Machine.Properties.Resources.down_arrow;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.Location = new System.Drawing.Point(26, 72);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(226, 42);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "SELECT USER";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // ModeMemory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.ClientSize = new System.Drawing.Size(913, 541);
+            this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnProceed);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
@@ -401,7 +401,7 @@ namespace UPV_Machine
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
             this.ForeColor = System.Drawing.Color.Black;
-            this.Name = "ModeMem";
+            this.Name = "ModeMemory";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.ModeMem_Load);
             this.panel1.ResumeLayout(false);

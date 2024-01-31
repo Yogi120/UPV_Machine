@@ -95,17 +95,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class1.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="ModeMem.cs">
+    <Compile Include="DateTimeSetting.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ModeMem.Designer.cs">
-      <DependentUpon>ModeMem.cs</DependentUpon>
+    <Compile Include="DateTimeSetting.Designer.cs">
+      <DependentUpon>DateTimeSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="COMPortConnection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="COMPortConnection.Designer.cs">
+      <DependentUpon>COMPortConnection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageVideo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImageVideo.Designer.cs">
+      <DependentUpon>ImageVideo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModeMemory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModeMemory.Designer.cs">
+      <DependentUpon>ModeMemory.cs</DependentUpon>
     </Compile>
     <Compile Include="ParaSetting.cs">
       <SubType>Form</SubType>
@@ -115,11 +134,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Variable_Declaration.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ModeMem.resx">
-      <DependentUpon>ModeMem.cs</DependentUpon>
+    <EmbeddedResource Include="DateTimeSetting.resx">
+      <DependentUpon>DateTimeSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="COMPortConnection.resx">
+      <DependentUpon>COMPortConnection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImageVideo.resx">
+      <DependentUpon>ImageVideo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModeMemory.resx">
+      <DependentUpon>ModeMemory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ParaSetting.resx">
       <DependentUpon>ParaSetting.cs</DependentUpon>
@@ -202,6 +231,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\down-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\connected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disconnected.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\connected2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\connected3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\connected4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disconnected2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\low.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\low-battery-level.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -45,4 +45,7 @@ D:\UPV-MACHINE\UPV_Machine\UPV_Machine.exe
 D:\UPV-MACHINE\UPV_Machine\UPV_Machine.pdb
 D:\UPV-MACHINE\UPV_Machine\UPV_Machine\obj\Debug\UPV_Machine.csproj.CopyComplete
 D:\UPV-MACHINE\UPV_Machine\UPV_Machine\obj\Debug\UPV_Machine.ParaSetting.resources
-D:\UPV-MACHINE\UPV_Machine\UPV_Machine\obj\Debug\UPV_Machine.ModeMem.resources
+D:\UPV-Machine\UPV_Machine\UPV_Machine\obj\Debug\UPV_Machine.ImageVideo.resources
+D:\UPV-Machine\UPV_Machine\UPV_Machine\obj\Debug\UPV_Machine.ModeMemory.resources
+D:\UPV-Machine\UPV_Machine\UPV_Machine\obj\Debug\UPV_Machine.DateTimeSetting.resources
+D:\UPV-Machine\UPV_Machine\UPV_Machine\obj\Debug\UPV_Machine.COMPortConnection.resources
