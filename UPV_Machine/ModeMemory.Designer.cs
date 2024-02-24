@@ -325,7 +325,7 @@ namespace UPV_Machine
             this.btnProceed.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnProceed.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnProceed.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProceed.Location = new System.Drawing.Point(710, 444);
+            this.btnProceed.Location = new System.Drawing.Point(571, 356);
             this.btnProceed.Name = "btnProceed";
             this.btnProceed.Size = new System.Drawing.Size(131, 39);
             this.btnProceed.TabIndex = 12;
@@ -341,7 +341,7 @@ namespace UPV_Machine
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Image = global::UPV_Machine.Properties.Resources.down_arrow;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.Location = new System.Drawing.Point(667, 72);
+            this.button3.Location = new System.Drawing.Point(547, 71);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(226, 42);
             this.button3.TabIndex = 8;
@@ -359,7 +359,7 @@ namespace UPV_Machine
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = global::UPV_Machine.Properties.Resources.down_arrow;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.Location = new System.Drawing.Point(339, 72);
+            this.button2.Location = new System.Drawing.Point(286, 72);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(226, 42);
             this.button2.TabIndex = 6;

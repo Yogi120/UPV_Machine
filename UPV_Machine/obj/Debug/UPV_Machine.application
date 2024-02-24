@@ -7,14 +7,14 @@
     <framework targetVersion="4.7.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="UPV_Machine.exe.manifest" size="10185">
+    <dependentAssembly dependencyType="install" codebase="UPV_Machine.exe.manifest" size="10186">
       <assemblyIdentity name="UPV_Machine.exe" version="1.0.0.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>U344JEKLuo+YPOUHhjs4WMIwymRziwAGG+o/zZRsVOM=</dsig:DigestValue>
+        <dsig:DigestValue>yhGc0Wer/kdiCXg1APUOo/9IkpsfZwqHCCkUlc9fre4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -43,13 +43,13 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Data.Sqlite.dll" size="172064">
-      <assemblyIdentity name="Microsoft.Data.Sqlite" version="8.0.0.0" publicKeyToken="ADB9793829DDAE60" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="Microsoft.Data.Sqlite" version="8.0.2.0" publicKeyToken="ADB9793829DDAE60" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>J7QaR366FEumREub1qA7xt49qYe2se+zVXiFp2JjpUU=</dsig:DigestValue>
+        <dsig:DigestValue>BphBuGPtlAlpWuJS9pzgtJHM6bgjKrUzu4j0JuGhZVE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -138,14 +138,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="UPV_Machine.exe" size="869376">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="UPV_Machine.exe" size="1269248">
       <assemblyIdentity name="UPV_Machine" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>8RwdspmRgW+qsKNs4wPMDrTxjw20mCxqgD4mcPgc05A=</dsig:DigestValue>
+        <dsig:DigestValue>fXEsvWusMqzkU9Je4XH6blWOYWA1Na1bccIu4kBh83c=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -63,6 +63,36 @@ namespace UPV_Machine.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap asterisk {
+            get {
+                object obj = ResourceManager.GetObject("asterisk", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap asterisk__3_ {
+            get {
+                object obj = ResourceManager.GetObject("asterisk (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap asterisk__4_ {
+            get {
+                object obj = ResourceManager.GetObject("asterisk (4)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap connected {
             get {
                 object obj = ResourceManager.GetObject("connected", resourceCulture);
@@ -236,6 +266,36 @@ namespace UPV_Machine.Properties {
         internal static System.Drawing.Bitmap RightArr {
             get {
                 object obj = ResourceManager.GetObject("RightArr", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rounded_rectangle {
+            get {
+                object obj = ResourceManager.GetObject("rounded-rectangle", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rounded_rectangle__1_ {
+            get {
+                object obj = ResourceManager.GetObject("rounded-rectangle (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap rounded_rectangle1 {
+            get {
+                object obj = ResourceManager.GetObject("rounded-rectangle1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
