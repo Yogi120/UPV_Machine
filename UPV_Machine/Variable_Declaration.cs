@@ -26,7 +26,7 @@ namespace UPV_Machine
 
 
 
-        public static string[] stringValues = new string[80];
+        public static string[] stringValues = new string[300];
 
         public static string SystemStatus;
         public static string TimeModeSet { get; set; }
@@ -127,7 +127,9 @@ namespace UPV_Machine
         public static bool Medium;
         public static bool Fast;
 
+        //----------------  Signal Display Graph    -------------
 
+        
 
     }
 }

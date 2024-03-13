@@ -66,7 +66,7 @@ namespace UPV_Machine
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pcbVelMode = new System.Windows.Forms.PictureBox();
-            this.btnSignalDisSet = new System.Windows.Forms.Button();
+            this.btnSignalGraph = new System.Windows.Forms.Button();
             this.btnElasticModeSet = new System.Windows.Forms.Button();
             this.btnParameterSet = new System.Windows.Forms.Button();
             this.btnCrackDepthSet = new System.Windows.Forms.Button();
@@ -127,9 +127,9 @@ namespace UPV_Machine
             this.lblUnitMpS = new System.Windows.Forms.Label();
             this.lblUNITmm = new System.Windows.Forms.Label();
             this.pnlVelocityType = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.rbInDrtMod = new System.Windows.Forms.RadioButton();
+            this.rbSemiDrtMod = new System.Windows.Forms.RadioButton();
+            this.rbDrtMod = new System.Windows.Forms.RadioButton();
             this.lblL_TimeMode = new System.Windows.Forms.Label();
             this.lblTmeWCrack = new System.Windows.Forms.Label();
             this.pnlElasticModeResult = new System.Windows.Forms.Panel();
@@ -263,7 +263,7 @@ namespace UPV_Machine
             this.panel2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel2.Location = new System.Drawing.Point(33, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(243, 749);
+            this.panel2.Size = new System.Drawing.Size(241, 749);
             this.panel2.TabIndex = 2;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -715,7 +715,7 @@ namespace UPV_Machine
             this.panel3.BackColor = System.Drawing.Color.DarkGray;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.pcbVelMode);
-            this.panel3.Controls.Add(this.btnSignalDisSet);
+            this.panel3.Controls.Add(this.btnSignalGraph);
             this.panel3.Controls.Add(this.btnElasticModeSet);
             this.panel3.Controls.Add(this.btnParameterSet);
             this.panel3.Controls.Add(this.btnCrackDepthSet);
@@ -738,22 +738,23 @@ namespace UPV_Machine
             this.pcbVelMode.TabIndex = 22;
             this.pcbVelMode.TabStop = false;
             // 
-            // btnSignalDisSet
+            // btnSignalGraph
             // 
-            this.btnSignalDisSet.BackColor = System.Drawing.Color.DarkGray;
-            this.btnSignalDisSet.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSignalDisSet.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnSignalDisSet.FlatAppearance.BorderSize = 0;
-            this.btnSignalDisSet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSignalDisSet.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSignalDisSet.Image = ((System.Drawing.Image)(resources.GetObject("btnSignalDisSet.Image")));
-            this.btnSignalDisSet.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSignalDisSet.Location = new System.Drawing.Point(0, 165);
-            this.btnSignalDisSet.Name = "btnSignalDisSet";
-            this.btnSignalDisSet.Size = new System.Drawing.Size(189, 33);
-            this.btnSignalDisSet.TabIndex = 6;
-            this.btnSignalDisSet.Text = "Signal Display";
-            this.btnSignalDisSet.UseVisualStyleBackColor = false;
+            this.btnSignalGraph.BackColor = System.Drawing.Color.DarkGray;
+            this.btnSignalGraph.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSignalGraph.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnSignalGraph.FlatAppearance.BorderSize = 0;
+            this.btnSignalGraph.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSignalGraph.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignalGraph.Image = ((System.Drawing.Image)(resources.GetObject("btnSignalGraph.Image")));
+            this.btnSignalGraph.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSignalGraph.Location = new System.Drawing.Point(0, 165);
+            this.btnSignalGraph.Name = "btnSignalGraph";
+            this.btnSignalGraph.Size = new System.Drawing.Size(189, 33);
+            this.btnSignalGraph.TabIndex = 6;
+            this.btnSignalGraph.Text = "Signal Display";
+            this.btnSignalGraph.UseVisualStyleBackColor = false;
+            this.btnSignalGraph.Click += new System.EventHandler(this.btnSignalGraph_Click);
             // 
             // btnElasticModeSet
             // 
@@ -992,7 +993,7 @@ namespace UPV_Machine
             this.lblBatteryPer.BackColor = System.Drawing.Color.Transparent;
             this.lblBatteryPer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblBatteryPer.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBatteryPer.Location = new System.Drawing.Point(768, 37);
+            this.lblBatteryPer.Location = new System.Drawing.Point(781, 95);
             this.lblBatteryPer.Name = "lblBatteryPer";
             this.lblBatteryPer.Size = new System.Drawing.Size(31, 18);
             this.lblBatteryPer.TabIndex = 80;
@@ -1002,9 +1003,9 @@ namespace UPV_Machine
             // 
             this.picNoSignal.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picNoSignal.BackgroundImage")));
             this.picNoSignal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.picNoSignal.Location = new System.Drawing.Point(452, 10);
+            this.picNoSignal.Location = new System.Drawing.Point(454, 31);
             this.picNoSignal.Name = "picNoSignal";
-            this.picNoSignal.Size = new System.Drawing.Size(88, 76);
+            this.picNoSignal.Size = new System.Drawing.Size(81, 55);
             this.picNoSignal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picNoSignal.TabIndex = 79;
             this.picNoSignal.TabStop = false;
@@ -1235,7 +1236,7 @@ namespace UPV_Machine
             // 
             this.btnHide.BackgroundImage = global::UPV_Machine.Properties.Resources.menu;
             this.btnHide.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnHide.Location = new System.Drawing.Point(0, 4);
+            this.btnHide.Location = new System.Drawing.Point(-1, 4);
             this.btnHide.Name = "btnHide";
             this.btnHide.Size = new System.Drawing.Size(32, 23);
             this.btnHide.TabIndex = 0;
@@ -1472,58 +1473,49 @@ namespace UPV_Machine
             // 
             this.pnlVelocityType.BackColor = System.Drawing.Color.Silver;
             this.pnlVelocityType.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlVelocityType.Controls.Add(this.button4);
-            this.pnlVelocityType.Controls.Add(this.button5);
-            this.pnlVelocityType.Controls.Add(this.button3);
+            this.pnlVelocityType.Controls.Add(this.rbInDrtMod);
+            this.pnlVelocityType.Controls.Add(this.rbSemiDrtMod);
+            this.pnlVelocityType.Controls.Add(this.rbDrtMod);
             this.pnlVelocityType.Location = new System.Drawing.Point(439, 59);
             this.pnlVelocityType.Name = "pnlVelocityType";
             this.pnlVelocityType.Size = new System.Drawing.Size(148, 0);
             this.pnlVelocityType.TabIndex = 76;
             // 
-            // button4
+            // rbInDrtMod
             // 
-            this.button4.BackColor = System.Drawing.Color.Silver;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(1, 69);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(146, 33);
-            this.button4.TabIndex = 77;
-            this.button4.Text = "Indirect Method";
-            this.button4.UseVisualStyleBackColor = false;
+            this.rbInDrtMod.AutoSize = true;
+            this.rbInDrtMod.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbInDrtMod.Location = new System.Drawing.Point(2, 74);
+            this.rbInDrtMod.Name = "rbInDrtMod";
+            this.rbInDrtMod.Size = new System.Drawing.Size(125, 20);
+            this.rbInDrtMod.TabIndex = 89;
+            this.rbInDrtMod.TabStop = true;
+            this.rbInDrtMod.Text = "Indirect Method";
+            this.rbInDrtMod.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // rbSemiDrtMod
             // 
-            this.button5.BackColor = System.Drawing.Color.Silver;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(1, 35);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(146, 33);
-            this.button5.TabIndex = 78;
-            this.button5.Text = "Semi Direct Method";
-            this.button5.UseVisualStyleBackColor = false;
+            this.rbSemiDrtMod.AutoSize = true;
+            this.rbSemiDrtMod.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbSemiDrtMod.Location = new System.Drawing.Point(2, 39);
+            this.rbSemiDrtMod.Name = "rbSemiDrtMod";
+            this.rbSemiDrtMod.Size = new System.Drawing.Size(151, 20);
+            this.rbSemiDrtMod.TabIndex = 88;
+            this.rbSemiDrtMod.TabStop = true;
+            this.rbSemiDrtMod.Text = "Semi Direct Method";
+            this.rbSemiDrtMod.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // rbDrtMod
             // 
-            this.button3.BackColor = System.Drawing.Color.Silver;
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(1, 1);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(146, 33);
-            this.button3.TabIndex = 76;
-            this.button3.Text = "Direct Method";
-            this.button3.UseVisualStyleBackColor = false;
+            this.rbDrtMod.AutoSize = true;
+            this.rbDrtMod.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbDrtMod.Location = new System.Drawing.Point(2, 6);
+            this.rbDrtMod.Name = "rbDrtMod";
+            this.rbDrtMod.Size = new System.Drawing.Size(114, 20);
+            this.rbDrtMod.TabIndex = 87;
+            this.rbDrtMod.TabStop = true;
+            this.rbDrtMod.Text = "Direct Method";
+            this.rbDrtMod.UseVisualStyleBackColor = true;
             // 
             // lblL_TimeMode
             // 
@@ -2143,6 +2135,7 @@ namespace UPV_Machine
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.pnlVelocityType.ResumeLayout(false);
+            this.pnlVelocityType.PerformLayout();
             this.pnlElasticModeResult.ResumeLayout(false);
             this.pnlElasticModeResult.PerformLayout();
             this.panel12.ResumeLayout(false);
@@ -2207,7 +2200,7 @@ namespace UPV_Machine
         private System.Windows.Forms.Button btnCrackDepthSet;
         private System.Windows.Forms.Button btnParameterSet;
         private System.Windows.Forms.Button btnElasticModeSet;
-        private System.Windows.Forms.Button btnSignalDisSet;
+        private System.Windows.Forms.Button btnSignalGraph;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -2266,9 +2259,6 @@ namespace UPV_Machine
         private System.Windows.Forms.Label lblUnitMpS;
         private System.Windows.Forms.Label lblUNITmm;
         private System.Windows.Forms.Panel pnlVelocityType;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.PictureBox pcbVelMode;
         private System.Windows.Forms.Label lblGain;
         private System.Windows.Forms.Label lblL_TimeMode;
@@ -2319,6 +2309,9 @@ namespace UPV_Machine
         private System.Windows.Forms.PictureBox pbAsterisk;
         private System.Windows.Forms.PictureBox pbRectangle;
         private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.RadioButton rbInDrtMod;
+        private System.Windows.Forms.RadioButton rbSemiDrtMod;
+        private System.Windows.Forms.RadioButton rbDrtMod;
     }
 }
 

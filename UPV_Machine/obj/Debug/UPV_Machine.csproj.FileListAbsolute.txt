@@ -50,3 +50,4 @@ D:\UPV-Machine\UPV_Machine\UPV_Machine\obj\Debug\UPV_Machine.ModeMemory.resource
 D:\UPV-Machine\UPV_Machine\UPV_Machine\obj\Debug\UPV_Machine.DateTimeSetting.resources
 D:\UPV-Machine\UPV_Machine\UPV_Machine\obj\Debug\UPV_Machine.COMPortConnection.resources
 D:\UPV-Machine\UPV_Machine\UPV_Machine\obj\Debug\UPV_Machine.ParaGraphofVelocity_Strength.resources
+D:\UPV-Machine\UPV_Machine\UPV_Machine\obj\Debug\UPV_Machine.SignalDisplayGrapgh.resources

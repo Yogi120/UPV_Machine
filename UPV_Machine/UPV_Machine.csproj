@@ -115,6 +115,12 @@
     <Compile Include="COMPortConnection.Designer.cs">
       <DependentUpon>COMPortConnection.cs</DependentUpon>
     </Compile>
+    <Compile Include="SignalDisplayGraph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignalDisplayGraph.Designer.cs">
+      <DependentUpon>SignalDisplayGraph.cs</DependentUpon>
+    </Compile>
     <Compile Include="ParaGraphofVelocity_Strength.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="COMPortConnection.resx">
       <DependentUpon>COMPortConnection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignalDisplayGraph.resx">
+      <DependentUpon>SignalDisplayGraph.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ImageVideo.resx">
       <DependentUpon>ImageVideo.cs</DependentUpon>
@@ -286,6 +295,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\rounded-rectangle %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\signal-bars %2810%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

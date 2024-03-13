@@ -29,9 +29,9 @@ namespace UPV_Machine
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.gridviewVelocityStrength = new System.Windows.Forms.DataGridView();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.btnGraphicalRepresentation = new System.Windows.Forms.Button();
@@ -47,25 +47,25 @@ namespace UPV_Machine
             // 
             this.gridviewVelocityStrength.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridviewVelocityStrength.Dock = System.Windows.Forms.DockStyle.Right;
-            this.gridviewVelocityStrength.Location = new System.Drawing.Point(1053, 0);
+            this.gridviewVelocityStrength.Location = new System.Drawing.Point(1050, 0);
             this.gridviewVelocityStrength.Name = "gridviewVelocityStrength";
-            this.gridviewVelocityStrength.Size = new System.Drawing.Size(317, 721);
+            this.gridviewVelocityStrength.Size = new System.Drawing.Size(320, 721);
             this.gridviewVelocityStrength.TabIndex = 0;
             this.gridviewVelocityStrength.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // chart1
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
+            chartArea3.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea3);
             this.chart1.Dock = System.Windows.Forms.DockStyle.Left;
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
+            legend3.Name = "Legend1";
+            this.chart1.Legends.Add(legend3);
             this.chart1.Location = new System.Drawing.Point(0, 0);
             this.chart1.Name = "chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart1.Series.Add(series2);
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.chart1.Series.Add(series3);
             this.chart1.Size = new System.Drawing.Size(1047, 721);
             this.chart1.TabIndex = 2;
             this.chart1.Text = "chart1";
@@ -75,13 +75,13 @@ namespace UPV_Machine
             this.btnGraphicalRepresentation.BackColor = System.Drawing.Color.Blue;
             this.btnGraphicalRepresentation.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnGraphicalRepresentation.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnGraphicalRepresentation.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGraphicalRepresentation.Font = new System.Drawing.Font("Cambria", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGraphicalRepresentation.ForeColor = System.Drawing.Color.White;
-            this.btnGraphicalRepresentation.Location = new System.Drawing.Point(957, 644);
+            this.btnGraphicalRepresentation.Location = new System.Drawing.Point(955, 644);
             this.btnGraphicalRepresentation.Name = "btnGraphicalRepresentation";
-            this.btnGraphicalRepresentation.Size = new System.Drawing.Size(90, 46);
+            this.btnGraphicalRepresentation.Size = new System.Drawing.Size(92, 50);
             this.btnGraphicalRepresentation.TabIndex = 3;
-            this.btnGraphicalRepresentation.Text = "Graphical View !";
+            this.btnGraphicalRepresentation.Text = "Reload Graph";
             this.btnGraphicalRepresentation.UseVisualStyleBackColor = false;
             this.btnGraphicalRepresentation.Click += new System.EventHandler(this.btnGraphicalRepresentation_Click_1);
             // 
@@ -122,6 +122,7 @@ namespace UPV_Machine
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1370, 721);
             this.Controls.Add(this.lblFormula);
             this.Controls.Add(this.pcActCurve);

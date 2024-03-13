@@ -26,6 +26,10 @@ namespace UPV_Machine
         char ULA_1 = Common.ula_1;
         char ULA_2 = Common.ula_2;
 
+        bool isBtnSignalDisplayClicked = false;
+
+
+
         SerialPort mySerialPort = new SerialPort();
 
 
@@ -45,7 +49,7 @@ namespace UPV_Machine
             Common.initialWidth = 241;
 
             //  initialWidth = 241;
-            Common.isHidden = false;
+            //Common.isHidden = false;
 
             // btnMemorySetting.Click += btnMemory_Click;
 
@@ -92,18 +96,7 @@ namespace UPV_Machine
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (Common.isHidden)
-            {
-                panel2.Width += 20;
-                if (panel2.Width >= Common.initialWidth)
-                {
-                    timer1.Stop();
-                    Common.isHidden = false;
-                    //isHiddenPanel2 = false;
-                }
-            }
-
-            else
+            if (Common.isHidden == false)
             {
                 panel2.Width -= 20;
                 if (panel2.Width <= 0)
@@ -111,6 +104,16 @@ namespace UPV_Machine
                     timer1.Stop();
                     Common.isHidden = true;
                     //isHiddenPanel2 = true;
+                }
+            }
+
+            else if(Common.isHidden == true)
+            {
+                panel2.Width += 20;
+                if (panel2.Width >= Common.initialWidth)
+                {
+                    timer1.Stop();
+                    Common.isHidden = false;
                 }
             }
         }
@@ -171,7 +174,7 @@ namespace UPV_Machine
             }
 
 
-            Common.isHidden = true;
+            Common.isHidden = false;
 
             panel3.BringToFront();
             panel4.BringToFront();
@@ -204,7 +207,7 @@ namespace UPV_Machine
             Timer2.Interval = 100;
             Timer2.Enabled = true;
             Timer2.Start();
-            //  Common.ULR0_Req = true;
+          //  Common.ULR0_Req = true;
             Common.ULR1_Req = true;
         }
 
@@ -551,27 +554,27 @@ namespace UPV_Machine
             Common.isSignal_displayModeClicked = false;
             Common.isNextBtnClicked = false;
 
-            lblMainValue2.Text = "0000 ";
-            lblUnituS.Visible = false;
-            lblUnitMpS.Visible = false;
-            lblUnitNpMM2.Visible = true;
-            lblUNITmm.Visible = false;
-            lblMode.Text = "Parameter Mode";
-            lblSmallValue2.Text = Common.VelocityModeSet + " " + "m/s";
-            lblIS_Standard.Visible = true;
-            lblMinTime.Visible = true;
-            lblSmallValue1.Visible = true;
-            lblMinVelocity.Visible = true;
-            lblSmallValue2.Visible = true;
-            lblDrtMethod.Visible = true;
-            btnSSave.Visible = false;
-            btnASave.Visible = false;
-            btnNext.Visible = false;
-            lblElasticModes.Visible = false;
-            btnSave.Visible = true;
-            lblTimeWCrack.Visible = false;
-            lblTimeWoCrack.Visible = false;
-            lblTmeWCrack.Visible = false;
+            //lblMainValue2.Text = "0000 ";
+            //lblUnituS.Visible = false;
+            //lblUnitMpS.Visible = false;
+            //lblUnitNpMM2.Visible = true;
+            //lblUNITmm.Visible = false;
+            //lblMode.Text = "Parameter Mode";
+            //lblSmallValue2.Text = Common.VelocityModeSet + " " + "m/s";
+            //lblIS_Standard.Visible = true;
+            //lblMinTime.Visible = true;
+            //lblSmallValue1.Visible = true;
+            //lblMinVelocity.Visible = true;
+            //lblSmallValue2.Visible = true;
+            //lblDrtMethod.Visible = true;
+            //btnSSave.Visible = false;
+            //btnASave.Visible = false;
+            //btnNext.Visible = false;
+            //lblElasticModes.Visible = false;
+            //btnSave.Visible = true;
+            //lblTimeWCrack.Visible = false;
+            //lblTimeWoCrack.Visible = false;
+            //lblTmeWCrack.Visible = false;
         }
 
         private void btnElasticModeSet_Click(object sender, EventArgs e)
@@ -584,30 +587,30 @@ namespace UPV_Machine
             Common.isSignal_displayModeClicked = false;
             Common.isNextBtnClicked = false;
 
-            lblMainValue2.Text = "0000";
-            lblMode.Text = "Elastic Mode";
-            lblUnituS.Visible = true;
-            lblUnitMpS.Visible = false;
-            lblUnitNpMM2.Visible = false;
-            lblUNITmm.Visible = false;
-            lblElasticModes.Visible = true;
-            lblIS_Standard.Visible = false;
-            lblMinTime.Visible = false;
-            lblSmallValue1.Visible = false;
-            lblMinVelocity.Visible = false;
-            lblSmallValue2.Visible = false;
-            lblDistance.Visible = false;
-            lblDistanceValue.Visible = false;
-            btnASave.Visible = false;
-            btnSSave.Visible = false;
-            btnSave.Visible = false;
-            btnNext.Visible = true;
-            lblTimeWCrack.Visible = false;
-            lblTimeWoCrack.Visible = false;
-            //lblL_Velocity.Visible = false;
-            lblL_TimeMode.Visible = false;
-            lblTmeWCrack.Visible = false;
-            lblDrtMethod.Visible = false;
+            //lblMainValue2.Text = "0000";
+            //lblMode.Text = "Elastic Mode";
+            //lblUnituS.Visible = true;
+            //lblUnitMpS.Visible = false;
+            //lblUnitNpMM2.Visible = false;
+            //lblUNITmm.Visible = false;
+            //lblElasticModes.Visible = true;
+            //lblIS_Standard.Visible = false;
+            //lblMinTime.Visible = false;
+            //lblSmallValue1.Visible = false;
+            //lblMinVelocity.Visible = false;
+            //lblSmallValue2.Visible = false;
+            //lblDistance.Visible = false;
+            //lblDistanceValue.Visible = false;
+            //btnASave.Visible = false;
+            //btnSSave.Visible = false;
+            //btnSave.Visible = false;
+            //btnNext.Visible = true;
+            //lblTimeWCrack.Visible = false;
+            //lblTimeWoCrack.Visible = false;
+            ////lblL_Velocity.Visible = false;
+            //lblL_TimeMode.Visible = false;
+            //lblTmeWCrack.Visible = false;
+            //lblDrtMethod.Visible = false;
         }
 
         private void btnCrackDepthSet_Click(object sender, EventArgs e)
@@ -620,31 +623,31 @@ namespace UPV_Machine
             Common.isSignal_displayModeClicked = false;
             Common.isNextBtnClicked = false;
 
-            lblL_TimeMode.Visible = false;
-            lblTmeWCrack.Visible = true;
-            btnSSave.Visible = false;
-            lblMainValue2.Text = "00";
-            lblUnituS.Visible = false;
-            lblUnitMpS.Visible = false;
-            lblUnitNpMM2.Visible = false;
-            lblUNITmm.Visible = true;
-            lblMode.Text = "Crack Depth";
-            lblIS_Standard.Visible = true;
-            lblElasticModes.Visible = false;
-            lblMinTime.Visible = false;
-            lblSmallValue1.Visible = false;
-            lblMinVelocity.Visible = false;
-            lblSmallValue2.Visible = false;
-            // lblTimeWCrack.Visible = true;
-            lblTimeWoCrack.Visible = true;
-            btnNext.Visible = true;
-            btnSave.Visible = false;
-            btnSave.Visible = false;
-            btnASave.Visible = false;
-            lblDistance.Visible = true;
-            lblDistanceValue.Visible = true;
-            lblSmallValue1.Visible = true;
-            lblSmallValue2.Visible = true;
+            //lblL_TimeMode.Visible = false;
+            //lblTmeWCrack.Visible = true;
+            //btnSSave.Visible = false;
+            //lblMainValue2.Text = "00";
+            //lblUnituS.Visible = false;
+            //lblUnitMpS.Visible = false;
+            //lblUnitNpMM2.Visible = false;
+            //lblUNITmm.Visible = true;
+            //lblMode.Text = "Crack Depth";
+            //lblIS_Standard.Visible = true;
+            //lblElasticModes.Visible = false;
+            //lblMinTime.Visible = false;
+            //lblSmallValue1.Visible = false;
+            //lblMinVelocity.Visible = false;
+            //lblSmallValue2.Visible = false;
+            //// lblTimeWCrack.Visible = true;
+            //lblTimeWoCrack.Visible = true;
+            //btnNext.Visible = true;
+            //btnSave.Visible = false;
+            //btnSave.Visible = false;
+            //btnASave.Visible = false;
+            //lblDistance.Visible = true;
+            //lblDistanceValue.Visible = true;
+            //lblSmallValue1.Visible = true;
+            //lblSmallValue2.Visible = true;
         }
 
         private void btnNext_Click(object sender, EventArgs e)
@@ -746,6 +749,19 @@ namespace UPV_Machine
                 btnSSave.Visible = true;
                 lblMinTime.Visible = true;
                 lblDrtMethod.Visible = true;
+                if(rbDrtMod.Checked == true)
+                {
+                    lblDrtMethod.Text = "Direct Method";
+                }
+                else if(rbSemiDrtMod.Checked == true)
+                {
+                    lblDrtMethod.Text = "Semi Direct Method";
+                }
+                else if(rbInDrtMod.Checked == true)
+                {
+                    lblDrtMethod.Text = "Indirect Method";
+                }
+
                 lblIS_Standard.Visible = false;
                 lblMinVelocity.Visible = false;
                 lblSmallValue2.Visible = false;
@@ -821,6 +837,7 @@ namespace UPV_Machine
                     lblUnituS.Visible = false;
                     btnCalibration.Visible = false;
                     lblL_TimeMode.Visible = true;
+                    lblIS_Standard.Visible = false;
                 }
                 else if (Common.isSTimeMode)
                 {
@@ -829,6 +846,7 @@ namespace UPV_Machine
                     lblUnitMpS.Visible = false;
                     lblL_TimeMode.Visible = false;
                     btnCalibration.Visible = true;
+                    lblIS_Standard.Visible = false;
                 }
                 else if (Common.isSVelocityMode)
                 {
@@ -841,6 +859,7 @@ namespace UPV_Machine
                     lblUnitMpS.Visible = true;
                     lblL_TimeMode.Visible = true;
                     btnCalibration.Visible = false;
+                    lblIS_Standard.Visible = false;
                 }
 
                 //else if (isElasticModeResult)
@@ -858,6 +877,7 @@ namespace UPV_Machine
                     lblUnitMpS.Visible = false;
                     lblL_TimeMode.Visible = false;
                     btnCalibration.Visible = true;
+                    lblIS_Standard.Visible = false;
                 }
             }
 
@@ -1179,13 +1199,25 @@ namespace UPV_Machine
             }
             else if (Common.ULR1_Req == true)
             {
+                //i/*f(sec1 == )*/
                 char[] tx_buf = new char[] { DC1, ULR_1, sec3, DC3 };
                 mySerialPort.Write(tx_buf, 0, 4);
             }
             else if (Common.ULR0_Req == true) //|| ULR3_Req == true || ULR4_Req == true)
             {
-                char[] tx_buf = new char[] { DC1, ULR_0, sec1, DC3 };
+
+                //if(isBtnSignalDisplayClicked == true)
+                //{
+                //    char[] tx_buf = new char[] { DC1, ULR_0, sec2, DC3 };
+                //    mySerialPort.Write(tx_buf, 0, 4);
+                //}
+                //else
+                //{
+                char[] tx_buf = new char[] { DC1, ULR_0, sec2, DC3 };
                 mySerialPort.Write(tx_buf, 0, 4);
+                //}
+                
+                
             }
 
             string rx_buf = mySerialPort.ReadExisting(); // Reading the response from the serial port
@@ -1244,9 +1276,20 @@ namespace UPV_Machine
 
                             }
                         }
+                        else if (rx_buf[2] == sec2)
+                        {
+                            // string[] stringValues = rx_buf.Split(Common.PC_REC);
+
+                            //string[] stringValues = rx_buf.Split(Common.PC_REC);
+
+                            Common.stringValues = rx_buf.Split(Common.PC_REC);
+
+                            //MessageBox.Show($"Received values: {string.Join(", ", Common.stringValues)}");
+
+                        }
                         //stopcntr = 0;
-                        
-                    }
+
+                    } 
 
                     else if (rx_buf[1] == ULA_1)
                     {
@@ -1285,6 +1328,19 @@ namespace UPV_Machine
                             Common.velocityMax = stringValues[5];
                             Common.velocityMin = stringValues[6];
                             Common.Density = stringValues[7];
+
+                            if(stringValues[8] == "1")
+                            {
+                                rbDrtMod.Checked = true;
+                            }
+                            else if (stringValues[8] == "2")
+                            {
+                                rbSemiDrtMod.Checked = true;
+                            }
+                            else if (stringValues[8] == "4")
+                            {
+                                rbInDrtMod.Checked = true;
+                            }
 
                             if (stringValues[9] == "1")
                             {
@@ -1403,6 +1459,11 @@ namespace UPV_Machine
                             Common.gainSetting = stringValues[42];
                             Common.txVoltage = stringValues[43];
 
+                            //ParaSetting paraSetting = new ParaSetting();
+                            Common.ULR0_Req = true;
+                            Common.ULR1_Req = false;
+                            //MessageBox.Show($"Received values: {string.Join(", ", stringValues)}");
+
                             if (stringValues[45] == "0")
                             {
                                 Common.Slow = true;
@@ -1416,25 +1477,20 @@ namespace UPV_Machine
                                 Common.Fast = true;
                             }
 
-                            //ParaSetting paraSetting = new ParaSetting();
-                            Common.ULR0_Req = true;
-                            Common.ULR1_Req = false;
-                            MessageBox.Show($"Received values: {string.Join(", ", stringValues)}");
+                          
 
                         }
 
-                        else if(rx_buf[2] == sec2)
-                        {
+                        //else if(rx_buf[2] == sec2)
+                        //{
 
-                        }
+                        //}
 
                         else if(rx_buf[2] == sec3)
                         {
                             Common.stringValues = rx_buf.Split(Common.PC_REC);
-                            Common.ULR0_Req = false;
-                            Common.ULR1_Req = true;
-                            Common.ULR2_Req = false;
-
+                            Common.ULR0_Req = true;
+                            Common.ULR1_Req = false;
                         }
                         
                     }
@@ -1491,11 +1547,24 @@ namespace UPV_Machine
 
         private void btnParameterGraph_Click(object sender, EventArgs e)
         {
-            Common.ULR1_Req = true;
-            Common.ULR0_Req = false;
+            //Common.ULR1_Req = true;
+            //Common.ULR0_Req = false;
             SerialAction();
             ParaGraphofVelocity_Strength parameterGraph = new ParaGraphofVelocity_Strength();
             parameterGraph.ShowDialog();
+        }
+
+        private void btnSignalGraph_Click(object sender, EventArgs e)
+        {
+            isBtnSignalDisplayClicked = true;
+            //sec1 = false;
+            //sec2 = true;
+            SerialAction();
+            //signaldis graphSignal = new signaldis();
+            //graphSignal.ShowDialog();
+
+            SignalDisplayGrapgh signalDisplayGrapgh = new SignalDisplayGrapgh();
+            signalDisplayGrapgh.ShowDialog();
         }
     }
 }
